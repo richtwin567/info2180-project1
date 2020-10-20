@@ -1,4 +1,9 @@
 /* Add your CSS to this file */
+
+* {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	font-size: 18px;
@@ -7,13 +12,24 @@ body {
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 960px;
-    width: 100%;
+	margin: 0 auto;
+	max-width: 960px;
+	width: 100%;
+}
+
+img{
+    width: 75px;
 }
 
 header {
 	background-color: white;
+}
+
+header .container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
 header h1 {
@@ -29,24 +45,78 @@ header a:hover {
 	color: #5a67d8;
 }
 
+header nav {
+	width: 40%;
+}
+header ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0;
+	justify-content: space-between;
+}
+
+header ul a {
+	text-decoration: none;
+}
+
 .overview-hero {
 	background-color: #e1e8f0;
+}
+
+.overview-hero .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.learn-about{}
+
+.learn-about .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'learn-about-title learn-about-title learn-about-title'
+    'cards cards cards';
+}
+
+.learn-about .cards{
+    grid-area: cards;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    'card1 card2 card3';
 }
 
 .learn-about h2 {
 	font-size: 24px;
     color: #48bb78;
+    grid-area: learn-about-title;
 }
 
 .learn-about .card {
 	border-color: #e2e8f0;
 	border-radius: 5px;
     box-shadow: lightgrey 1px 4px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
 
 .learn-about .card h3 {
 	color: #48bb78;
 	font-size: 21px;
+}
+
+.learn-about .card:nth-child(1){
+    grid-area: card1;
+}
+
+.learn-about .card:nth-child(2){
+    grid-area: card2;
+}
+
+.learn-about .card:nth-child(3){
+    grid-area: card3;
 }
 
 .testing {
