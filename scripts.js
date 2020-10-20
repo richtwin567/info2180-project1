@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
     delete cardimg3;
 
     var articleimg1 = document.getElementsByTagName("article").item(0).children[0];
-    articleimg1.setAttribute("src", "./images/omar-yehia-toCKeKuQpL0-unsplash.jpg");
+    articleimg1.setAttribute("src", "./images/haydn-golden-wcvuv00UDd4-unsplash.jpg");
     delete articleimg1;
 
     var articleimg2 = document.getElementsByTagName("article").item(1).children[0];
