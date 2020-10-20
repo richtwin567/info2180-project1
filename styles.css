@@ -1,11 +1,83 @@
 /* Add your CSS to this file */
 body {
-    margin: 0;
-    font-size: 16px;
+	margin: 0;
+	font-size: 18px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+header {
+	background-color: white;
+}
+
+header h1 {
+	font-size: 18px;
+}
+
+header a {
+	color: #6b7280;
+	font-size: 18px;
+}
+
+header a:hover {
+	color: #5a67d8;
+}
+
+.overview-hero {
+	background-color: #e1e8f0;
+}
+
+.learn-about h2 {
+	font-size: 24px;
+    color: #48bb78;
+}
+
+.learn-about .card {
+	border-color: #e2e8f0;
+	border-radius: 5px;
+    box-shadow: lightgrey 1px 4px 5px;
+}
+
+.learn-about .card h3 {
+	color: #48bb78;
+	font-size: 21px;
+}
+
+.testing {
+	background-color: #4a5568;
+	color: white;
+}
+
+.testing .btn {
+	background-color: #48bb78;
+	border-radius: 5px;
+}
+
+.stories h2,
+a {
+	color: #5a67d8;
+}
+
+.stories img {
+	border-radius: 50%;
+}
+
+.newsletter {
+	background-color: #48bb78;
+	color: white;
+}
+
+.newsletter button {
+	background-color: #5a67d8;
+}
+
+footer {
+	background-color: #4a5568;
+	color: white;
 }
