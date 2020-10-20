@@ -178,6 +178,11 @@ a {
 .newsletter form {
     display: flex;
     flex-direction: row;
+    width: 100%;
+}
+
+.newsletter .form-group,input{
+    width:100%;
 }
 
 footer {
