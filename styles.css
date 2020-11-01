@@ -18,7 +18,7 @@ body {
 }
 
 img{
-    width: 75px;
+    width: 10em;
 }
 
 header {
@@ -46,8 +46,9 @@ header a:hover {
 }
 
 header nav {
-	width: 22em;
+	width: 20em;
 }
+
 header ul {
 	list-style-type: none;
 	display: flex;
@@ -62,12 +63,19 @@ header ul a {
 }
 
 .overview-hero {
-	background-color: #e1e8f0;
+    background-color: #e2e8f0;
+    height: 18em;
 }
 
 .overview-hero .container {
     display: flex;
+    align-items: center;
     flex-direction: row;
+    height: 18em;
+}
+
+.overview-hero-image{
+    margin-right: 5em;
 }
 
 .learn-about .container{
@@ -98,6 +106,10 @@ header ul a {
     display: flex;
     flex-direction: column;
     align-items:center;
+    margin-bottom: 2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding: 1em;
 }
 
 .learn-about .card h3 {
@@ -117,9 +129,14 @@ header ul a {
     grid-area: card3;
 }
 
+.learn-about .card img{
+    height: 10em;
+}
+
 .testing {
 	background-color: #4a5568;
-	color: white;
+    color: white;
+    height: 16em;
 }
 
 .testing .container{
@@ -127,6 +144,7 @@ header ul a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 16em;
 }
 
 .testing .btn {
@@ -141,6 +159,10 @@ header ul a {
 
 }
 
+.stories{
+    margin: 5em 0em;
+}
+
 .stories h2,
 a {
 	color: #5a67d8;
@@ -152,14 +174,19 @@ a {
     height: 10em;
     object-fit: cover;
     object-position: top;
+    margin-right: 2em;
 }
 
 .stories article{
     display: flex;
     flex-direction: row;
 }
+.stories .container article:nth-child(2){
+    margin-bottom: 3em;
+}
 
 .newsletter {
+    height: 20em;
 	background-color: #48bb78;
     color: white;
 }
@@ -171,6 +198,8 @@ a {
 .newsletter .container{
     display: flex;
     flex-direction: column;
+    height: 20em;
+    justify-content: center;
     align-items: center;
     max-width: 30em;
 }
@@ -182,12 +211,31 @@ a {
 }
 
 .newsletter .form-group,input{
-    width:100%;
+    width:98%;
+    height: 4em;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.newsletter .btn{
+    width: 15em;
+    height: 4em;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
 }
 
 footer {
 	background-color: #4a5568;
     color: white;
+    height: 2em;
+}
+
+footer .container{
+    height: 2em;
+    padding: 0.5em;
 }
 
 footer p{
